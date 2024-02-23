@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	height: 100vh;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: #f8f9fd;
+	width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+input[type='text'],
+input[type='password'] {
+	height: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='submit'] {
+	margin-top: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	background: #01d28e;
+	border: 1px solid #01d28e;
+	color: #fff;
+	padding: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input[type='submit']:hover {
+	background: #6cf0c2;
 }
 
-.card {
-  padding: 2em;
+.button-container {
+	display: flex;
+	justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.login-form {
+	background-color: white;
+	padding: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: grey;
+	width: 80%;
+}
+
+.list-container {
+	display: flex;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+.title {
+	font-size: 25px;
+	margin-bottom: 20px;
+	color: grey;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 10px;
+}
+
+.productList {
+	width: 100%;
+}
+table td,
+th {
+	text-align: left;
 }
